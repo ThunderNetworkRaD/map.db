@@ -35,3 +35,6 @@ async function sample() {
 With **npm**:
 
 `npm i map.db`
+
+
+Thx to galaxy05 for original idea
