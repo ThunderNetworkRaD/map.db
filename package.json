@@ -29,6 +29,8 @@
     "@types/node": "^16.7.10"
   },
   "dependencies": {
-    "typescript": "^4.4.2"
+    "fs": "^0.0.1-security",
+    "typescript": "^4.4.2",
+    "util": "^0.12.4"
   }
 }
