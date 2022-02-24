@@ -17,7 +17,7 @@ Although this module works in fact the same way as a Map, there are still some l
 > Example:
 
 ```js
-const MapDB = require('@galaxy05/map.db');
+const MapDB = require('quickmap.db');
 const mapdb = new MapDB('file.db'); // this is the save file's name + extension
 
 async function sample() {
@@ -34,7 +34,7 @@ async function sample() {
 ### Installation
 With **npm**:
 
-`npm i map.db`
+`npm i quickmap.db`
 
 
 Thx to galaxy05 for original idea
