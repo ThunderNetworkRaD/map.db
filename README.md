@@ -36,5 +36,3 @@ With **npm**:
 
 `npm i quickmap.db`
 
-
-Thx to galaxy05 for original idea
