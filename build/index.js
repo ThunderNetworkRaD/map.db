@@ -110,5 +110,89 @@ class MapDB {
         this.map.clear();
         return undefined;
     }
+    /**
+     *
+     * @param key
+     * @param value
+     */
+         async add(key, value) {
+            if (typeof key !== 'string' && typeof key !== 'number') {
+                throw new TypeError('key must be of type string or number');
+            }
+    
+            if (this.map) {
+                var number = this.map.get(key);
+            } else {
+                const file = fs.readFileSync(this.db);
+                const data: any[] = JSON.parse(file.toString());
+    
+                var number = data.find(pair => pair.key == key)?.value || undefined;
+            }
+    
+            if (number == undefined || !number) number = 0;
+            var value = value + number;
+    
+            if (this.db) {
+                try {
+                    const file = fs.readFileSync(this.db);
+                    const data: any[] = JSON.parse(file.toString());
+        
+                    const i = data.findIndex(pair => pair.key == key);
+        
+                    !data[i] ? data.push({ key, value }) : data[i] = { key, value };
+        
+                    await writeDB(this.db, JSON.stringify(data));
+                    if (!this.map) return data;
+                } catch {
+                    await writeDB(this.db, `[${JSON.stringify({ key, value })}]`).then(() => {
+                        if (!this.map) return JSON.parse(fs.readFileSync(this.db).toString());
+                    });
+                }
+            }
+    
+            return this.map.set(key, value);
+        }
+    /**
+     *
+     * @param key
+     * @param value
+     */
+    async subtract(key, value) {
+        if (typeof key !== 'string' && typeof key !== 'number') {
+            throw new TypeError('key must be of type string or number');
+        }
+
+        if (this.map) {
+            var number = this.map.get(key);
+        } else {
+            const file = fs.readFileSync(this.db);
+            const data: any[] = JSON.parse(file.toString());
+
+            var number = data.find(pair => pair.key == key)?.value || undefined;
+        }
+
+        if (number == undefined || !number) number = 0;
+        var value = value - number;
+
+        if (this.db) {
+            try {
+                const file = fs.readFileSync(this.db);
+                const data: any[] = JSON.parse(file.toString());
+    
+                const i = data.findIndex(pair => pair.key == key);
+    
+                !data[i] ? data.push({ key, value }) : data[i] = { key, value };
+    
+                await writeDB(this.db, JSON.stringify(data));
+                if (!this.map) return data;
+            } catch {
+                await writeDB(this.db, `[${JSON.stringify({ key, value })}]`).then(() => {
+                    if (!this.map) return JSON.parse(fs.readFileSync(this.db).toString());
+                });
+            }
+        }
+
+        return this.map.set(key, value);
+    }
 }
 module.exports = MapDB;
