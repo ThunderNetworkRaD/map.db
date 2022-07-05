@@ -44,17 +44,5 @@ declare class MapDB {
     delete(key: string | number): Promise<boolean>;
     clear(): Promise<void>;
     size(): number;
-    /**
-     *
-     * @param key
-     * @param value
-     */
-    add(key: string | number, value: any): Promise<any[] | Map<any, any>>;
-    /**
-     *
-     * @param key
-     * @param value
-     */
-    subtract(key: string | number, value: any): Promise<any[] | Map<any, any>>;
 }
 export = MapDB;
