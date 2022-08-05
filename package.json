@@ -10,7 +10,8 @@
     "node": ">=12"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "true"
   },
   "repository": {
     "type": "git",
