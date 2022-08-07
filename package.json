@@ -1,7 +1,5 @@
-
-
 {
-  "name": "@fiusdevelopment/quickmap.db",
+  "name": "quickmap.db",
   "version": "0.0.1",
   "description": "A Map that stores data locally and loads it at startup",
   "types": "types/index.d.ts",
@@ -23,9 +21,6 @@
     "MapDB"
   ],
   "author": "FIUSDevelopment",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FIUSDevelopment/map.db/issues"
