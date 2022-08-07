@@ -1,6 +1,6 @@
 {
   "name": "quickmap.db",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A Map that stores data locally and loads it at startup",
   "types": "types/index.d.ts",
   "main": "build/index.js",
