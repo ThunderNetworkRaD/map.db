@@ -1,35 +1,19 @@
 {
-  "name": "quickmap.db",
-  "version": "2.0.0",
-  "description": "A Map that stores data locally and loads it at startup",
-  "types": "types/index.d.ts",
-  "main": "build/index.js",
-  "engines": {
-    "node": ">=12"
-  },
+  "name": "@fiusdevelopment/database",
+  "version": "3.0.0",
+  "description": "A localhost db",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "true"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FIUSDevelopment/map.db.git"
+    "url": "git+https://github.com/FIUSdevelopment/database.git"
   },
-  "keywords": [
-    "Map",
-    "DB",
-    "MapDB"
-  ],
-  "author": "FIUSDevelopment",
+  "author": "FIUS Development | Killer Boss Original",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FIUSDevelopment/map.db/issues"
+    "url": "https://github.com/FIUSdevelopment/map.db/issues"
   },
-  "homepage": "https://github.com/FIUSDevelopment/map.db#readme",
-  "devDependencies": {
-    "@types/node": "^16.7.10"
-  },
-  "dependencies": {
-    "typescript": "^4.4.2"
-  }
+  "homepage": "https://github.com/FIUSdevelopment/map.db#readme"
 }
