@@ -1,6 +1,6 @@
 {
-  "name": "@fiusdevelopment/database",
-  "version": "3.0.0",
+  "name": "@fiusdevelopment/map.db",
+  "version": "1.0.0",
   "description": "A localhost db",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FIUSdevelopment/database.git"
+    "url": "git+https://github.com/FIUSdevelopment/map.db.git"
   },
   "author": "FIUS Development | Killer Boss Original",
   "license": "ISC",
