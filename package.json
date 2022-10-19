@@ -1,6 +1,6 @@
 {
   "name": "@fiusdevelopment/map.db",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A localhost db",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/FIUSdevelopment/map.db/issues"
   },
-  "homepage": "https://github.com/FIUSdevelopment/map.db#readme"
+  "homepage": "https://github.com/FIUSdevelopment/map.db#readme",
+  "dependencies": {
+    "util": "^0.12.5"
+  }
 }
