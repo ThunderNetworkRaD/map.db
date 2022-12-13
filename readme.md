@@ -19,7 +19,7 @@ Although this module works in fact the same way as a Map, there are still some l
 
 > Example:
 ```js
-const MapDB = require('@fiusdevelopment/map.db');
+const MapDB = require('quickmap.db');
 const mapdb = new MapDB('file.db'); // this is the save file's name + extension
 async function sample() {
     // assuming 'somekey' exists in the Map and has a value { cool: false }

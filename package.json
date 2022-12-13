@@ -1,6 +1,6 @@
 {
-  "name": "@fiusdevelopment/map.db",
-  "version": "1.0.2",
+  "name": "quickmap.db",
+  "version": "2022.12.13",
   "description": "A localhost db",
   "main": "index.js",
   "scripts": {
