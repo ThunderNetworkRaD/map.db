@@ -1,7 +1,7 @@
 {
   "name": "quickmap.db",
   "version": "2022.12.13",
-  "description": "A localhost db",
+  "description": "An easytouse database",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/FIUSdevelopment/map.db.git"
   },
-  "author": "FIUS Development | Killer Boss Original",
+  "author": "Thunder Network Development | Killer Boss Original",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FIUSdevelopment/map.db/issues"
+    "url": "https://github.com/ThunderNetworkRaD/map.db/issues"
   },
-  "homepage": "https://github.com/FIUSdevelopment/map.db#readme",
+  "homepage": "https://github.com/ThunderNetworkRaD/map.db#readme",
   "dependencies": {
     "util": "^0.12.5"
   }
