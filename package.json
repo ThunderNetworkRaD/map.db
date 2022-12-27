@@ -1,6 +1,6 @@
 {
   "name": "quickmap.db",
-  "version": "2022.12.13",
+  "version": "2022.12.27",
   "description": "An easytouse database",
   "main": "index.js",
   "scripts": {
