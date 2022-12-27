@@ -1,5 +1,5 @@
 {
-  "name": "quickmap.db",
+  "name": "@thundernetworkrad/map.db",
   "version": "2022.12.27",
   "description": "An easytouse database",
   "main": "index.js",
