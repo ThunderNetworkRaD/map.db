@@ -3,7 +3,7 @@ on:
   release:
     types: [created]
 jobs:
-  Publish-NPM:
+  Publish-GitHub-NPM:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,12 +12,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@thundernetworkrad'
       - name: Install dependencies 🔧
         run: npm ci
       - name: Publish package on NPM 📦
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          REGISTRY1: 'registry.npmjs.org'
-          REGISTRY2: 'registry=https://registry.npmjs.org/'
+          NODE_AUTH_TOKEN: ${{ secrets.GP_TOKEN }}
+          REGISTRY1: 'npm.pkg.github.com'
+          REGISTRY2: '@thundernetworkrad:registry=https://npm.pkg.github.com'
