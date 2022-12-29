@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FIUSdevelopment/map.db.git"
+    "url": "git+https://github.com/ThunderNetworkRaD/quickmap.db.git"
   },
   "author": "Thunder Network Development | Killer Boss Original",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThunderNetworkRaD/map.db/issues"
+    "url": "https://github.com/ThunderNetworkRaD/quickmap.db/issues"
   },
-  "homepage": "https://github.com/ThunderNetworkRaD/map.db#readme",
+  "homepage": "https://github.com/ThunderNetworkRaD/quickmap.db#readme",
   "dependencies": {
     "util": "^0.12.5"
   }
