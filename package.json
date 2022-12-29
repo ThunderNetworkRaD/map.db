@@ -1,10 +1,10 @@
 {
-  "name": "@thundernetworkrad/map.db",
-  "version": "2022.12.27",
-  "description": "An easytouse database",
+  "name": "map.db",
+  "version": "2022.12.29",
+  "description": "An easy and quick database that works",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
