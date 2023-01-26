@@ -2,21 +2,26 @@
   "name": "@thundernetworkrad/map.db",
   "version": "2022.12.29",
   "description": "An easy and quick database that works",
-  "main": "index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
-    "test": "node index.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThunderNetworkRaD/quickmap.db.git"
+    "url": "git+https://github.com/ThunderNetworkRaD/map.db.git"
   },
   "author": "Thunder Network Development | Killer Boss Original",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThunderNetworkRaD/quickmap.db/issues"
+    "url": "https://github.com/ThunderNetworkRaD/map.db/issues"
   },
-  "homepage": "https://github.com/ThunderNetworkRaD/quickmap.db#readme",
+  "homepage": "https://github.com/ThunderNetworkRaD/map.db#readme",
   "dependencies": {
+    "tslib": "^2.4.1",
     "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }
