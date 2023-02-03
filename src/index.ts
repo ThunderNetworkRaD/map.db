@@ -1,13 +1,15 @@
-import { promisify } from "util";
-import * as fs from "fs";
+import fs from "fs/promises";
 
-const writeDB = promisify(fs.writeFile);
-const deleteDB = promisify(fs.unlink);
-
+const writeDB = fs.writeFile;
 class MapDB {
     /**
      * @constructor
      * @param filename If not set, MapDB will only use internal memory
      * @example 'file.db'
+     * @param options Options to pass to the constructor
+     * @param options.dirname
      */
+    constructor(filename: string | undefined, options: any) {
+        this.map = new Map()
+    }
 }

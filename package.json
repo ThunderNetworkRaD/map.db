@@ -19,9 +19,6 @@
   "homepage": "https://github.com/ThunderNetworkRaD/map.db#readme",
   "dependencies": {
     "tslib": "^2.4.1",
-    "util": "^0.12.5"
-  },
-  "devDependencies": {
     "@types/node": "^18.11.18"
   }
 }
