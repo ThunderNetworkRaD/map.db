@@ -1,6 +1,6 @@
 {
-  "name": "@thundernetworkrad/map.db",
-  "version": "2022.12.29",
+  "name": "quickmap.db",
+  "version": "2023.02.04",
   "description": "An easy and quick database that works",
   "main": "build/index.js",
   "types": "build/index.d.ts",
