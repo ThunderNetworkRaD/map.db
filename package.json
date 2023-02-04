@@ -1,11 +1,11 @@
 {
-  "name": "@thundernetworkrad/map.db",
-  "version": "2022.12.29",
+  "name": "quickmap.db",
+  "version": "2023.02.04",
   "description": "An easy and quick database that works",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "install": "tsc"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,8 @@
   },
   "homepage": "https://github.com/ThunderNetworkRaD/map.db#readme",
   "dependencies": {
+    "@types/node": "^18.11.18",
     "tslib": "^2.4.1",
-    "util": "^0.12.5"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.18"
+    "typescript": "^4.9.5"
   }
 }

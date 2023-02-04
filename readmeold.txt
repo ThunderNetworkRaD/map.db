@@ -16,8 +16,7 @@ You also have the option to only use local storage without touching internal mem
 
 Although this module works in fact the same way as a Map, there are still some little differences between them, which are listed below:
 
-> - `MapDB#set()` and `MapDB#delete()` return **promises**
-> - `Map#size` in map.db is a **method** (`MapDB#size()`)
+> - `MapDB#set()` return **promises**
 > - When a value is reassigned to a key, it is only saved in the Map but not in the actual save file, so you always have to **set the key/value pair with the new value**.
 > Example:
 
