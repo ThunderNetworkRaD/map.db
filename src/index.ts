@@ -55,5 +55,18 @@ export class MapDB {
         return map.set(key, value)
     }
 
-    
+    /**
+     * @param key 
+     */
+
+    get(key: string | number) {
+        if (map) {
+            return map.get(key)
+        } else {
+            file = fs.readFileSync(db);
+            data = JSON.parse(file.toString());
+
+            return data.find((pair: any) => pair.key == key)?.value || undefined;
+        }
+    }
 }
