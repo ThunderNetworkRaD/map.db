@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/ThunderNetworkRaD/map.db#readme",
   "dependencies": {
+    "@types/node": "^18.11.18",
     "tslib": "^2.4.1",
-    "@types/node": "^18.11.18"
+    "typescript": "^4.9.5"
   }
 }
